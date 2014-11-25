@@ -60,6 +60,8 @@ au CursorMoved *.pl call <sid>vawa()
 au CursorMovedi *.pl call <sid>vawa()
 au CursorMoved *.pm call <sid>vawa()
 au CursorMovedi *.pm call <sid>vawa()
+au CursorMoved *.pwt call <sid>vawa()
+au CursorMovedi *.pwt call <sid>vawa()
 au CursorMoved *.t call <sid>vawa()
 au CursorMovedi *.t call <sid>vawa()
 augroup END

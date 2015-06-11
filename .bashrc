@@ -19,11 +19,14 @@ __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$
 export PS1="\[$txtOra\][\[$txtBl2\]\w\[$txtOra\]]-[\[$txtGit\]$__git_branch\[$txtOra\]]\$ \[$txtNormal\] "
 export EDITOR=vim
 alias  less="less -Ris"
-export JAVA_HOME=/usr/java/latest/
-
+#export JAVA_HOME=/usr/java/latest/
+###export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.65-2.5.1.3.fc20.x86_64/
+export JAVA_HOME="/usr/java/latest"
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=/home/leskop/tools/skype/:$PATH
-export PATH=/home/leskop/tools/intellij13/bin/:$PATH
+export PATH=/home/leskop/tools/intellij/bin/:$PATH
 export PATH=/home/leskop/tools/soapUI/soapUI-4.5.2/bin/:$PATH
 
-
+# Postgress oriented stuff
+export PAGER=less
+export LESS="-iMSx4 -FX"

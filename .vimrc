@@ -16,8 +16,8 @@ set encoding=utf8
 set termencoding=utf-8
 
 "We can use different key mappings for easy navigation between splits to save a keystroke. So instead of CTRL-w then j, use just CTRL-j
-nnoremap <C-V> <C-W><C-V>
-nnoremap <C-H> <C-W><C-S>
+"nnoremap <C-V> <C-W><C-V>
+"nnoremap <C-H> <C-W><C-S>
 
 set splitbelow
 set splitright
@@ -49,3 +49,9 @@ let g:airline_symbols.space = "\ua0"
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
+
+if &diff
+    colorscheme elflord
+endif
+
+
